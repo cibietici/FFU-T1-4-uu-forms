@@ -1,0 +1,45 @@
+html {
+  font-size: 24px;
+}
+
+img {
+  width: auto;
+  height: 20vh;
+}
+
+/* */
+
+.visually-hidden, .visually-hidden-focusable {
+  clip: rect(0,0,0,0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  z-index: 1001;
+}
+
+.button {
+  background-color: aqua;
+  padding: 10px;
+}
+
+a {
+  /* text-decoration: none; // dårlig, gjerne ikke bruker */
+}
+
+footer {
+  margin: 20px 0 0 0;
+}
+
+input, select {
+  display: block;
+  margin: 10px;
+}
+
+select {
+  padding: 5px;
+}
