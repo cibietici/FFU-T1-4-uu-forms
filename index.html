@@ -8,11 +8,9 @@
         <title>Universell utforming og skjemaer</title>
     </head>
     <body>
-        <a 
-            class="visually-hidden-focusable" 
-            href="#main-content" 
-            tabindex="0">
-            Til hovedinnhold
+
+        <a class="skip-to-content-link" href="#main-content">
+            Skip to content
         </a>
         
         <header>
@@ -22,33 +20,34 @@
                     <li><a href="#">om oss</a></li>
                     <li><a href="#">kontakt</a></li>
                 </ul>
-                <button class="button">
-                    <a href="./forms.html">Gå til skjema</a>
-                </button>
+
+                <a href="./forms.html">
+                    <button class="button">
+                        Gå til skjema
+                    </button>
+                </a>
             </nav>
         </header>
         
-        <section lang="en">
-            <h1 id="main-content">Image</h1>
+        <main lang="en" id="main-content">
+            <h1>Image</h1>
 
             <figure>
                <img 
                 src="./assets/guglielmo-basile-i6sVlVphbPw-unsplash.jpg"
                 alt="Bildet av en gammel by">  
-                <figcaption>Bildet av en gammel by</figcaption>
+                <figcaption>Image of an old town</figcaption>
             </figure>
-            
 
             <hr />
 
-            Gå til <a href="https://www.google.com">GOOGLE</a> for mer info
+            Go to <a href="https://www.google.com">GOOGLE</a> for more indormation!
             <hr />
-            <a href="#" onclick="close()" aria-label="lukk vind">x</a>
-        </section>
+            <a href="#" onclick="javascript:close()" aria-label="Lukk vind">x</a>
+        </main>
 
-        <footer>
+        <footer lang="no">
             Kontaktopplysninger
         </footer>
-        
     </body>
 </html>

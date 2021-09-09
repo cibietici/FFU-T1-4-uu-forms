@@ -7,39 +7,106 @@ img {
   height: 20vh;
 }
 
-/* */
+/* 
+Hopp over blokk css kode eksempel
+*/
 
-.visually-hidden, .visually-hidden-focusable {
-  clip: rect(0,0,0,0);
-  border: 0;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+.skip-to-content-link {
+  background: #e77e23;
+  height: 30px;
+  padding: 8px;
+  top: -10px;
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  z-index: 1001;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
 }
 
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
+/* slutt av hopp over kode */
+
 .button {
-  background-color: aqua;
+  background-color: rgb(217, 225, 225);
   padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.button, .button a {
+  color: #000;
+  text-decoration: none; /* Button er lenke som er visuelt markert */
+}
+
+/* følgene klasser kan brukes for å skape plass rundt elementer */
+.margin-10 {
+  margin: 10px;
+}
+
+.margin-20 {
+  margin: 20px;
 }
 
 a {
-  /* text-decoration: none; // dårlig, gjerne ikke bruker */
+  /* text-decoration: none; // dårlig UU praksis, gjerne ikke bruker */
+}
+
+nav {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #6c6969;
+  color: #fff;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+main {
+  padding: 10px;
 }
 
 footer {
   margin: 20px 0 0 0;
+  background-color: #cccccc;
+  padding: 20px;
 }
 
-input, select {
+input, select, textarea {
   display: block;
-  margin: 10px;
+  margin: 10px 0 20px 0; 
+  /* Her gir vi margin på toppen av 10px og bunnen av 20px alt. bruk margin-top: 10px; og margin-bottom: 20px; 
+  Viktig å gi rom til rundt felter for mobil navigering*/
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin: 0 10px 0 5px;
+}
+
+input[type="submit"] {
+  margin-left: 20px;
 }
 
 select {
   padding: 5px;
+}
+
+fieldset {
+  margin: 20px;
+}
+
+label {
+  font-size: 16px;
+}
+
+h4 {
+  margin: 10px 0 20px 0;
+}
+
+hr {
+  margin: 20px 0; /* vi setter her margin til hr tag (bruddlinje), 20px top og bunnen, 0 til høyre og venstre */
 }
